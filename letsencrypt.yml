@@ -15,3 +15,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./vhost:/etc/nginx/vhost.d
       - ./html:/usr/share/nginx/html
+      - ./client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf:ro
